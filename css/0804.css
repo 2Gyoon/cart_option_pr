@@ -52,3 +52,38 @@ header{height: 80px; background-color: #ccc;}
 
 .pd .wrap .right .btns{text-align: center; display: flex; justify-content: center; align-items: center; padding-top: 30px;}
 .pd .wrap .right .btns a{display: block; width: 150px; line-height: 50px; background-color: #ee3535; border-radius: 5px; margin: 0 10px; color: #fff; font-size: 18px;}
+
+
+/* 카트 */
+.dark{position: fixed; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(0,0,0,0.6); z-index: -1; opacity: 0;}
+.dark.active{z-index: 1; opacity: 1; transition: opacity 0.5s;}
+
+.cart{position: fixed; top: 0; right: -400px; width: 400px; height: 100%; background-color: #fff; }
+.cart.active{right: 0; z-index: 2; transition: right 0.5s;}
+.cart .cart_title{background-color: rgb(91, 169, 243); padding: 10px;}
+.cart .cart_title h3{color: #fff; position: relative;}
+.cart .cart_title h3 span.close{position: absolute; right: 0; cursor: pointer;}
+
+.cart .cart_pd{padding: 10px;}
+.cart .cart_pd .cart_list{padding-bottom: 10px; border-bottom: 1px solid #333;}
+.cart .cart_pd .cart_list .pd_list{display: flex; padding-bottom: 10px;}
+.cart .cart_pd .cart_list .pd_list .cart_img{width: 100px; height: 100px; background-color: #aaffff; background-size: cover;}
+.cart .cart_pd .cart_list .pd_list .cart_info{margin-left: 20px; width: calc(100% - 120px); padding-right: 10px;}
+.cart .cart_pd .cart_list .pd_list .cart_info h3{padding-bottom: 55px; color: #333; font-size: 16px;}
+.cart .cart_pd .cart_list .pd_list .cart_info p{text-align: right; font-weight: bold; color: #555; font-size: 15px;}
+.cart .cart_pd .cart_list .pd_list .cart_info p span{}
+
+
+.cart .cart_pd .cart_list .option_list{background-color: #eee; padding: 10px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #333;}
+.cart .cart_pd .cart_list .option_list .opt_name{font-weight: bold; color: #555; font-size: 14px;}
+.cart .cart_pd .cart_list .option_list .opt_name .opt_name1{}
+.cart .cart_pd .cart_list .option_list .opt_name .opt_name2{}
+.cart .cart_pd .cart_list .option_list .price_opt{font-size: 14px; color: #555; font-weight: bold;}
+
+.cart .cart_btns{display: flex; justify-content: center; align-items: center; position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);}
+.cart .cart_btns a{display: block; background-color: rgb(91, 169, 243); width: 120px; text-align: center; line-height: 40px;  border-radius: 5px; margin: 0 5px; color: #fff;}
+.cart .cart_btns a:first-child{background-color: rgb(243, 96, 91);}
+.cart .cart_btns a:first-child:hover{background-color: rgb(255, 152, 151);}
+.cart .cart_btns a:last-child:hover{background-color: rgb(159, 208, 255); }
+
+.opt_more{display: block; text-align: center; color: #444; font-size: 15px; font-weight: bold; padding-top: 10px;}
